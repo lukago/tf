@@ -1,0 +1,13 @@
+application {
+    config {
+        baseName tf,
+        applicationType monolith,
+        packageName stud.tech,
+        authenticationType jwt,
+        buildTool gradle,
+        clientFramework react,
+        databaseType sql,
+        prodDatabaseType mysql,
+        languages [en]
+    }
+}
