@@ -6,6 +6,10 @@ provider "azurerm" {
 resource "azurerm_resource_group" "main" {
   name     = "${var.prefix}-resources"
   location = "${var.location}"
+
+  tags = {
+    environment = "TF sandbox"
+  }
 }
 
 # This creates a MySQL server
